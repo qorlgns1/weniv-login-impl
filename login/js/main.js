@@ -20,6 +20,9 @@ loginBtn.addEventListener("click", (e) => {
     } else {
       pwMessage.style.display = "none";
       alert("로그인 성공");
+
+      id.value = "";
+      pw.value = "";
     }
   }
 });
