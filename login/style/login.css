@@ -1,0 +1,316 @@
+@import url(../../common/reset.css);
+
+:root {
+  --text-gray-color: #767676;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container-login {
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 520px;
+}
+
+.container-login .header-login {
+  display: block;
+  padding: 19px 23px 18px 187px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.container-login h2 {
+  display: inline-block;
+  margin-right: 148px;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.container-login .link-close {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/close.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: -3px;
+}
+
+.container-login .main-content {
+  padding: 26px 23px 24px;
+}
+
+.main-content .text-info {
+  margin-bottom: 24px;
+  display: block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.login-form .user-info {
+  padding: 14px 0 14px 15px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.login-form .user-info.input-id {
+  margin-bottom: 10px;
+}
+
+.login-form .checkbox-state {
+  margin-top: 17px;
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  background-image: url(../images/check-box.png);
+}
+
+.login-form .checkbox-state:checked {
+  margin-top: 17px;
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  background-image: url(../images/checked-box.png);
+  border: 0;
+}
+
+.login-form .checkbox_label-state {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-gray-color);
+  vertical-align: 7px;
+  box-sizing: border-box;
+}
+
+.login-form .submit-login {
+  margin-top: 15px;
+  padding: 14px 211px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 22px;
+  background-color: #2f80ed;
+  border: 0;
+  border-radius: 5px;
+}
+
+.main-content .link-signup {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 157px;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-gray-color);
+}
+
+.main-content .link-signup::after {
+  content: "";
+  margin: 0 12px;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  border-right: 1px solid var(--text-gray-color);
+  vertical-align: -2px;
+}
+
+.main-content .link-find_user_info {
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-gray-color);
+}
+
+.main-content .text-or::before {
+  content: "";
+  box-sizing: border-box;
+  margin-right: 13px;
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  border-top: 1px solid #c4c4c4;
+  vertical-align: 5px;
+}
+
+.main-content .text-or {
+  margin: 30px 0 20px;
+  display: block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-gray-color);
+}
+
+.main-content .text-or::after {
+  content: "";
+  box-sizing: border-box;
+  margin-left: 13px;
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  border-top: 1px solid #c4c4c4;
+  vertical-align: 5px;
+}
+
+.google::before {
+  content: "";
+  box-sizing: border-box;
+  margin-right: 138px;
+  padding: 3px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/google-logo.png);
+  background-size: 70%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  vertical-align: bottom;
+}
+
+.google {
+  padding: 10px 0 10px 11px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: 7px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  color: var(--text-gray-color);
+}
+
+.facebook::before {
+  content: "";
+  box-sizing: border-box;
+  margin-right: 123px;
+  padding: 2px 8px 2px 7px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/facebook-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
+.facebook {
+  padding: 10px 0 10px 11px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: 7px;
+  border: 1px solid #2d9cdb;
+  border-radius: 5px;
+  color: var(--text-gray-color);
+  align-content: center;
+}
+
+.naver::before {
+  content: "";
+  box-sizing: border-box;
+  margin-right: 131px;
+  padding: 3px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/naver-logo.png);
+  background-size: cover;
+  background-clip: content-box;
+  vertical-align: bottom;
+}
+
+.naver {
+  padding: 10px 0 10px 11px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: 7px;
+  border: 1px solid #00bf18;
+  border-radius: 5px;
+  color: var(--text-gray-color);
+}
+
+.kakaotalk::before {
+  content: "";
+  box-sizing: border-box;
+  margin-right: 123px;
+  padding: 3px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/kakaotalk-logo.png);
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  vertical-align: bottom;
+}
+
+.kakaotalk {
+  padding: 10px 0 10px 11px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: 7px;
+  border: 1px solid #f2c94c;
+  border-radius: 5px;
+  color: var(--text-gray-color);
+}

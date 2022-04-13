@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 또는 회원가입</title>
+  <link rel="stylesheet" href="./style/login.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <article class="container-login">
+      <header class="header-login">
+        <h2>로그인 또는 회원가입</h2>
+        <a class="link-close" href="../"></a>
+      </header>
+      <main class="main-content">
+        <strong class="text-info">위니브에서 여러분의 궁금증을 해결하세요! :)</strong>
+        <form class="login-form" action="" method="post">
+          <label class="blind" for="user_id">아이디</label>
+          <input class="user-info input-id" type="text" name="user_id" id="user_id" placeholder="아이디">
+          <label class="blind" for="user_pw">비밀번호</label>
+          <input class="user-info input-pw" type="password" name="user_pw" id="user_pw" placeholder="비밀번호">
+          <input class="checkbox-state" type="checkbox" name="keep-state-login" id="keep-state-login">
+          <label class="checkbox_label-state" for="keep-state-login">로그인 상태 유지</label>
+          <button class="submit-login" type="submit">로그인</button>
+        </form>
+        <a class="link-signup" href="#">회원가입</a>
+        <a class="link-find_user_info" href="#">아이디/비밀번호 찾기</a>
+        <span class="text-or">또는</span>
+        <a class="google" href="https://www.google.com/">구글 계정으로 로그인</a>
+        <a class="facebook" href="https://www.facebook.com/">페이스북 계정으로 로그인</a>
+        <a class="naver" href="https://www.naver.com/">네이버 계정으로 로그인</a>
+        <a class="kakaotalk" href="https://accounts.kakao.com/login">카카오톡 계정으로 로그인</a>
+      </main>
+    </article>
+  </div>
+</body>
+
+</html>
