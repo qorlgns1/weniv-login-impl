@@ -1,0 +1,148 @@
+@import url(./reset.css);
+
+:root {
+  --text-gray-color: #767676;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.container-login {
+  box-sizing: border-box;
+  margin: 30px 25px;
+  padding: 18px 15px 17px;
+  width: 400px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.container-login .text-login {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 400;
+  line-height: 15px;
+  color: #000000;
+}
+
+.container-login .link-login {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #711bff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Spoqa Han Sans Neo";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.container-login .link-login::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 64px;
+  height: 18px;
+  background-image: url(../images/weniv-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
+.container-find {
+  float: left;
+}
+
+.container-signup {
+  float: right;
+}
+
+.container-login .link-find-id::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-lock.png);
+  background-size: cover;
+  vertical-align: bottom;
+}
+
+.container-login .link-find-id {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--text-gray-color);
+  margin-right: -4px;
+}
+
+.container-login .link-find-pw::before {
+  box-sizing: border-box;
+  content: "";
+  margin: auto 7px;
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  border-left: 1px solid var(--text-gray-color);
+  vertical-align: -2px;
+}
+
+.container-login .link-find-pw {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--text-gray-color);
+}
+
+.container-signup .link-signup::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-user.png);
+  background-size: cover;
+  vertical-align: bottom;
+}
+
+.container-login .link-signup {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--text-gray-color);
+}
